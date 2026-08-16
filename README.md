@@ -39,6 +39,9 @@ This is a lightweight browser extension that watches the tabs sidebar in the bac
 4. Click **Load unpacked** and select the project folder (the one containing `manifest.json`).
 5. Open a Google Doc that has Document Tabs — that's it, no setup needed.
 
+### From Edge Add-ons
+[https://microsoftedge.microsoft.com/addons/detail/abemmiopconnppajjcbachdbbjhcifid](https://microsoftedge.microsoft.com/addons/detail/abemmiopconnppajjcbachdbbjhcifid)
+
 > Works identically in both Chrome and Edge — Edge supports Chrome's Manifest V3 extension format natively.
 
 ## Usage
