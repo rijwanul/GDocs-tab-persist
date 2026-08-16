@@ -4,6 +4,7 @@
 
 **Keep your Google Docs Document Tabs exactly as you left them even after a refresh.**
 
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rijwanul.GDocs-tab-persist)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue.svg)](#)
 [![Chrome](https://img.shields.io/badge/Chrome-supported-4285F4?logo=googlechrome&logoColor=white)](#)
