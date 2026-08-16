@@ -2,7 +2,7 @@
 
 # 📌 Google Docs Tab State Persist
 
-**Keep your Google Docs Document Tabs exactly as you left them — even after a refresh.**
+**Keep your Google Docs Document Tabs exactly as you left them even after a refresh.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue.svg)](#)
