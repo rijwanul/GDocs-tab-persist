@@ -30,7 +30,7 @@ This is a lightweight browser extension that watches the tabs sidebar in the bac
 
 ## Install
 
-### From source (recommended for now)
+### From source
 
 1. Download or clone this repository.
 2. Open `chrome://extensions` (Chrome) or `edge://extensions` (Edge).
@@ -39,10 +39,6 @@ This is a lightweight browser extension that watches the tabs sidebar in the bac
 5. Open a Google Doc that has Document Tabs — that's it, no setup needed.
 
 > Works identically in both Chrome and Edge — Edge supports Chrome's Manifest V3 extension format natively.
-
-### From the Chrome Web Store
-
-*(Coming soon — link will be added here once published.)*
 
 ## Usage
 
