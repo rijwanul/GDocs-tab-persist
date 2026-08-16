@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      width: 260px;
+      padding: 14px;
+      color: #202124;
+    }
+    h1 {
+      font-size: 14px;
+      margin: 0 0 8px;
+    }
+    p {
+      font-size: 12px;
+      color: #5f6368;
+      line-height: 1.4;
+      margin: 0 0 12px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #dadce0;
+      border-radius: 6px;
+      background: #f8f9fa;
+      cursor: pointer;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    button:hover { background: #f1f3f4; }
+    #status { font-size: 11px; color: #188038; min-height: 14px; }
+    a { font-size: 11px; color: #1a73e8; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>Tab Layout Persist</h1>
+  <p>Your collapse/expand state for this document's tabs is saved automatically as you click.</p>
+  <button id="resetBtn">Reset saved layout for this doc</button>
+  <div id="status"></div>
+  <a href="options.html" target="_blank">Advanced / troubleshooting</a>
+  <script src="popup.js"></script>
+</body>
+</html>

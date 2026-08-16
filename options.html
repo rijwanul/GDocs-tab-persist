@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tab Layout Persist — Settings</title>
+  <style>
+    body {
+      font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 640px;
+      margin: 40px auto;
+      color: #202124;
+      padding: 0 16px;
+    }
+    h1 { font-size: 20px; }
+    h2 { font-size: 15px; margin-top: 32px; }
+    p, li { font-size: 13px; line-height: 1.6; color: #3c4043; }
+    code {
+      background: #f1f3f4;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+      margin-top: 8px;
+    }
+    th, td {
+      text-align: left;
+      padding: 6px 8px;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    button {
+      padding: 8px 14px;
+      border: 1px solid #dadce0;
+      border-radius: 6px;
+      background: #f8f9fa;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    #status { font-size: 12px; color: #188038; margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Google Docs Tab State Persist — Settings</h1>
+
+  <h2>Stored layouts</h2>
+  <p>One row per document you've used this extension on. "Entries" is the number of tabs whose state is remembered.</p>
+  <table id="stateTable">
+    <thead><tr><th>Document ID</th><th>Entries</th><th></th></tr></thead>
+    <tbody></tbody>
+  </table>
+  <p><button id="clearAllBtn">Clear all stored layouts</button><span id="status"></span></p>
+
+  <h2>If it's not working</h2>
+  <ol>
+    <li>Open the Google Doc, then open DevTools (F12) → Console tab.</li>
+    <li>Edit <code>content.js</code> in the unpacked extension folder and set <code>DEBUG = true</code> near the top, then reload the extension in <code>chrome://extensions</code> and refresh the doc.</li>
+    <li>Watch the console for lines starting with <code>[TabPersist]</code>. If you see <em>"No tab tree found yet"</em> repeatedly, Google has likely changed the tab tree's ARIA markup.</li>
+    <li>In DevTools, run <code>document.querySelectorAll('[role="treeitem"]').length</code> and <code>document.querySelectorAll('.chapterItemArrowContainer[role="button"]').length</code>. If either returns 0, Google has changed the tab sidebar's markup — copy those results and the console output back to Claude to get an updated <code>content.js</code>.</li>
+  </ol>
+
+  <h2>Known limitation</h2>
+  <p>Google Docs briefly renders all tabs expanded before this extension can react and correct it, so you may see a short flash on load before it settles into your saved layout. This is a limitation of any content-script-based fix — there's no Docs setting to disable the default-expanded behavior.</p>
+
+  <script src="options.js"></script>
+</body>
+</html>
